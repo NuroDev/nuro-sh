@@ -29,6 +29,7 @@
     "@splitbee/node": "^0.1.7",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@types/node": "^14.14.19",
+    "@types/node-fetch": "^2.5.7",
     "@vercel/node": "^1.8.5",
     "@vue/compiler-sfc": "^3.0.5",
     "@vuedx/typecheck": "^0.4.1",
