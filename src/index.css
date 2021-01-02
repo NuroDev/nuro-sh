@@ -1,0 +1,14 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+#app {
+	@apply antialiased;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	color: #2c3e50;
+}
