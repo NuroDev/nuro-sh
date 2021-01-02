@@ -1,5 +1,5 @@
 <template>
-	<Header />
+	<Hero />
 </template>
 
 <script setup lang="ts">
