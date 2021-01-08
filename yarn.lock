@@ -4315,6 +4315,11 @@ vite-plugin-pwa@^0.2.1:
     fast-glob "^3.2.4"
     rollup-plugin-workbox "^6.1.0"
 
+vite-plugin-string@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-string/-/vite-plugin-string-0.0.2.tgz#d5df58e3f40eebffcc1ac41e3dd78d9a70cc22cf"
+  integrity sha512-fDbS1zbmD/t1eDXxTlTfPtklIfKKOiC6Ef5lhirqwC35T97BiBNlS5F5qlTQoI1rK0axwOTCXQuTRpcpwf5LuA==
+
 vite-plugin-svg@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-svg/-/vite-plugin-svg-0.7.0.tgz#d793c0e0bf11ec245601e95e6f55c4fe67f22b96"

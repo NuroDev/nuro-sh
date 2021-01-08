@@ -1,9 +1,10 @@
 import { VitePWA } from 'vite-plugin-pwa';
+import Markdown from 'vite-plugin-md';
 import type { UserConfig } from 'vite';
 import ViteComponents from 'vite-plugin-components';
+import VitePluginString from 'vite-plugin-string';
 import ViteSVG from 'vite-plugin-svg';
 import voie from 'vite-plugin-voie';
-import Markdown from 'vite-plugin-md';
 
 const manifest = {
 	name: 'nuro',
@@ -33,6 +34,7 @@ export default <UserConfig> {
 		VitePWA({
 			manifest,
 		}),
+		VitePluginString(),
 		ViteSVG(),
 		voie({
 			extensions: ['vue', 'md'],
