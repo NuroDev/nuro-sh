@@ -6,13 +6,13 @@
 		>
 			<div class="max-w-6xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 				<div
-					class="bg-white bg-opacity-80 bg-blur ring-4 ring-gray-100 ring-opacity-50 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
+					class="bg-white dark:bg-gray-900 bg-opacity-80 bg-blur ring-4 ring-gray-100 dark:ring-gray-800 ring-opacity-50 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4"
 				>
 					<div
 						class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
 					>
 						<div class="lg:self-center">
-							<h2 class="text-3xl font-extrabold text-gray-700 sm:text-4xl">
+							<h2 class="text-3xl font-extrabold text-gray-700 dark:text-white sm:text-4xl">
 								<span class="block">Hi! 👋🏻 I'm Ben,</span>
 								<span class="block">a developer based in the UK</span>
 							</h2>

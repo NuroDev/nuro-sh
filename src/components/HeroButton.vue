@@ -32,7 +32,8 @@ const props = defineProps({
 <style lang="postcss">
 .heroButton {
 	@apply flex justify-center px-6 py-3 rounded-md shadow;
-	@apply bg-white ring-2 ring-gray-200 text-base font-medium;
+	@apply bg-white dark:bg-gray-900 text-gray-700 dark:text-white;
+	@apply ring-2 ring-gray-100 dark:ring-gray-800;
 	@apply transform transition ease-in-out duration-300;
 }
 
