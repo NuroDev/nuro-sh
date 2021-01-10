@@ -21,6 +21,7 @@
     "useTabs": true
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "ogl-typescript": "^0.1.20",
     "vue": "3.0.5",
     "vue-router": "^4.0.2"

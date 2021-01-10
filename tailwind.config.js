@@ -6,6 +6,9 @@ module.exports = {
 		removeDeprecatedGapUtilities: true,
 		standardFontWeights: true,
 	},
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+	],
 	purge: {
 		enabled: process.env.NODE_ENV === 'production',
 		content: [
