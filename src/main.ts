@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
-import routes from 'voie-pages';
+import routes from 'pages-generated';
 
 import App from './App.vue';
 

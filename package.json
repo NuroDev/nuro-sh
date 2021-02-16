@@ -40,10 +40,9 @@
 		"vite": "^2.0.0-beta.70",
 		"vite-plugin-components": "^0.6.10",
 		"vite-plugin-md": "^0.4.2",
+		"vite-plugin-pages": "^0.4.3",
 		"vite-plugin-pwa": "^0.4.6",
 		"vite-plugin-svg": "^0.7.0",
-		"vite-plugin-voie": "^0.7.3",
-		"vite-plugin-windicss": "^0.1.15",
-		"voie-pages": "^0.4.0"
+		"vite-plugin-windicss": "^0.1.15"
 	}
 }
