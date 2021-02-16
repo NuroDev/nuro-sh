@@ -15,8 +15,8 @@ import {
 } from 'ogl-typescript';
 import { onMounted } from 'vue';
 
-import vertex from '../assets/shaders/background.vs';
-import fragment from '../assets/shaders/background.fs';
+import vertex from '../assets/shaders/background.vs?raw';
+import fragment from '../assets/shaders/background.fs?raw';
 
 onMounted(async () => {
 	const renderer: Renderer = new Renderer({ dpr: 2 });
