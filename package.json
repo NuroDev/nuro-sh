@@ -1,49 +1,49 @@
 {
-  "name": "nuro.dev",
-  "version": "1.3.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:typed": "vuedx-typecheck . && vite build",
-    "serve": "vite serve",
-    "vc:dev": "vc dev -d",
-    "prettier": "prettier --write \"src/**/*.{js,ts,css,vue}\""
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": true,
-    "printWidth": 100,
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "trailingComma": "all",
-    "useTabs": true
-  },
-  "dependencies": {
-    "ogl-typescript": "^0.1.20",
-    "vue": "^3.0.5",
-    "vue-router": "^4.0.3"
-  },
-  "devDependencies": {
-    "@splitbee/node": "^0.1.8",
-    "@types/node": "^14.14.28",
-    "@types/node-fetch": "^2.5.8",
-    "@vercel/node": "^1.8.5",
-    "@vitejs/plugin-vue": "^1.1.4",
-    "@vue/compiler-sfc": "^3.0.5",
-    "@vuedx/typecheck": "^0.6.3",
-    "@vuedx/typescript-plugin-vue": "^0.6.3",
-    "node-fetch": "^2.6.1",
-    "prettier": "^2.2.1",
-    "typescript": "^4.1.5",
-    "vite": "^2.0.0-beta.70",
-    "vite-plugin-components": "^0.6.10",
-    "vite-plugin-md": "^0.4.2",
-    "vite-plugin-pwa": "^0.4.6",
-    "vite-plugin-svg": "^0.7.0",
-    "vite-plugin-voie": "^0.7.3",
-    "vite-plugin-windicss": "^0.1.15",
-    "voie-pages": "^0.4.0"
-  }
+	"name": "nuro.dev",
+	"version": "1.3.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"build:typed": "vuedx-typecheck . && vite build",
+		"serve": "vite serve",
+		"vc:dev": "vc dev -d",
+		"prettier": "prettier --write \"src/**/*.{js,ts,css,vue}\""
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": true,
+		"printWidth": 100,
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true
+	},
+	"dependencies": {
+		"ogl-typescript": "^0.1.20",
+		"vue": "^3.0.5",
+		"vue-router": "^4.0.3"
+	},
+	"devDependencies": {
+		"@splitbee/node": "^0.1.8",
+		"@types/node": "^14.14.28",
+		"@types/node-fetch": "^2.5.8",
+		"@vercel/node": "^1.8.5",
+		"@vitejs/plugin-vue": "^1.1.4",
+		"@vue/compiler-sfc": "^3.0.5",
+		"@vuedx/typecheck": "^0.6.3",
+		"@vuedx/typescript-plugin-vue": "^0.6.3",
+		"node-fetch": "^2.6.1",
+		"prettier": "^2.2.1",
+		"typescript": "^4.1.5",
+		"vite": "^2.0.0-beta.70",
+		"vite-plugin-components": "^0.6.10",
+		"vite-plugin-md": "^0.4.2",
+		"vite-plugin-pwa": "^0.4.6",
+		"vite-plugin-svg": "^0.7.0",
+		"vite-plugin-voie": "^0.7.3",
+		"vite-plugin-windicss": "^0.1.15",
+		"voie-pages": "^0.4.0"
+	}
 }
