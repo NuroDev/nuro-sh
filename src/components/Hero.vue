@@ -12,7 +12,9 @@
 						class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
 					>
 						<div class="lg:self-center">
-							<h2 class="text-3xl font-extrabold text-gray-700 dark:text-white sm:text-4xl">
+							<h2
+								class="text-3xl font-extrabold text-gray-700 dark:text-white sm:text-4xl"
+							>
 								<span class="block">Hi! 👋🏻 I'm Ben,</span>
 								<span class="block">a developer based in the UK</span>
 							</h2>
