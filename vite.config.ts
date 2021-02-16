@@ -1,10 +1,11 @@
+import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import Markdown from 'vite-plugin-md';
-import { defineConfig } from 'vite';
 import ViteComponents from 'vite-plugin-components';
 import ViteSVG from 'vite-plugin-svg';
 import voie from 'vite-plugin-voie';
 import vue from '@vitejs/plugin-vue';
+import WindiCSS from 'vite-plugin-windicss';
 
 export default defineConfig({
 	plugins: [
@@ -36,5 +37,13 @@ export default defineConfig({
 			extensions: ['vue', 'md'],
 		}),
 		vue(),
+		...WindiCSS({
+			windicssOptions: {
+				darkMode: 'class',
+				plugins: [
+					require('windicss/plugin/aspect-ratio'),
+				],
+			},
+		}),
 	],
 });

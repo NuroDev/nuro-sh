@@ -4,7 +4,7 @@ import routes from 'voie-pages';
 
 import App from './App.vue';
 
-import './index.css';
+import 'windi.css';
 
 const router = createRouter({
 	history: createWebHistory(),
