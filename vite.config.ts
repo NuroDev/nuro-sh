@@ -36,7 +36,9 @@ export default defineConfig({
 		voie({
 			extensions: ['vue', 'md'],
 		}),
-		vue(),
+		vue({
+			include: [/\.vue$/, /\.md$/],
+		}),
 		...WindiCSS({
 			windicssOptions: {
 				darkMode: 'class',
