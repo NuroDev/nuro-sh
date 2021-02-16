@@ -1,3 +1,5 @@
+import src from '*.vs';
+
 declare module '*.vue' {
 	import { DefineComponent } from 'vue';
 	const component: DefineComponent<{}, {}, any>;
@@ -19,7 +21,7 @@ declare module '*.glsl' {
 	export default src;
 }
 
-export interface JsonPoly {
+declare interface JsonPoly {
 	normal: Array<number>;
 	position: Array<number>;
 	uv: Array<number>;

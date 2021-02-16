@@ -18,6 +18,9 @@ import { onMounted } from 'vue';
 import vertex from '../assets/shaders/background.vs?raw';
 import fragment from '../assets/shaders/background.fs?raw';
 
+// TODO: Add types.d.ts to TS config
+import type { JsonPoly } from '../types';
+
 onMounted(async () => {
 	const renderer: Renderer = new Renderer({ dpr: 2 });
 	const gl = renderer.gl;
