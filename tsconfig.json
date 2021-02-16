@@ -16,6 +16,7 @@
 		"strict": true,
 		"target": "esnext",
 		"types": [
+			"vite/client",
 			"vite-plugin-pages/client"
 		]
 	},
