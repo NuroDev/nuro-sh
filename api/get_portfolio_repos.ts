@@ -7,7 +7,9 @@ const analytics = new SplitbeeAnalytics(process.env.SPLITBEE_PROJECT_ID as strin
 export default async function (_req: NowRequest, res: NowResponse) {
 	// Get all repositories
 	const response = await fetch('https://api.github.com/users/nurodev/repos');
-	const repos: Response = (await response.json()).filter((repo: any) => !'NuroDev/NuroDev'.includes(repo.full_name));
+	const repos: Response = (await response.json()).filter(
+		(repo: any) => !'NuroDev/NuroDev'.includes(repo.full_name),
+	);
 
 	analytics.track({
 		userId: 'myunique@user.id',
