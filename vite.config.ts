@@ -1,22 +1,20 @@
 import { defineConfig } from 'vite';
-import { VitePWA } from 'vite-plugin-pwa';
+import { VitePWA as PWA } from 'vite-plugin-pwa';
+import Components from 'vite-plugin-components';
 import Markdown from 'vite-plugin-md';
 import Pages from 'vite-plugin-pages';
-import ViteComponents from 'vite-plugin-components';
-import ViteSVG from 'vite-plugin-svg';
-import vue from '@vitejs/plugin-vue';
+import SVG from 'vite-plugin-svg';
+import Vue from '@vitejs/plugin-vue';
 import WindiCSS from 'vite-plugin-windicss';
+
+const extensions: Array<string> = ['vue', 'js', 'ts', 'md'];
 
 export default defineConfig({
 	plugins: [
+		Components({ extensions }),
 		Markdown(),
-		Pages({
-			extensions: ['vue', 'js', 'ts', 'md'],
-		}),
-		ViteComponents({
-			extensions: ['vue', 'md'],
-		}),
-		VitePWA({
+		Pages({ extensions }),
+		PWA({
 			manifest: {
 				name: 'nuro',
 				short_name: 'nuro',
@@ -35,16 +33,14 @@ export default defineConfig({
 				],
 			},
 		}),
-		ViteSVG(),
-		vue({
+		SVG(),
+		Vue({
 			include: [/\.vue$/, /\.md$/],
 		}),
-		...WindiCSS({
+		WindiCSS({
 			windicssOptions: {
 				darkMode: 'class',
-				plugins: [
-					require('windicss/plugin/aspect-ratio'),
-				],
+				plugins: [require('windicss/plugin/aspect-ratio')],
 			},
 		}),
 	],
