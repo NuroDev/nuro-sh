@@ -881,6 +881,16 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/json-tools@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@iconify/json-tools/-/json-tools-1.0.10.tgz#d9a7050dbbe8bb29d684d4b3f9446ed2d0bea3cc"
+  integrity sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==
+
+"@iconify/json@^1.1.303":
+  version "1.1.303"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-1.1.303.tgz#364daf69a97c02647227cc0d851a2e79a893e8e3"
+  integrity sha512-O8KDBcIVQolvUeVL9JiEIc2ifYKWyKu/5cX6PNC4EAPvtfvieOHs1YVPV4tphVhafjTTftR5XbZBmZHKG6uNIA==
+
 "@intlify/core-base@9.0.0-beta.16":
   version "9.0.0-beta.16"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.0.0-beta.16.tgz#ab35802b982f52db20d4758d020c2dcd1724e7f9"
@@ -3368,6 +3378,13 @@ vite-plugin-components@^0.6.10:
     debug "^4.3.2"
     fast-glob "npm:@knightly/fast-glob@master"
     minimatch "^3.0.4"
+
+vite-plugin-icons@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-icons/-/vite-plugin-icons-0.2.1.tgz#6d2d4d1271428e6347b96a7d9b51dbe9f87f1f8f"
+  integrity sha512-ZIJ8G2AHwEDt4oDST46E6Uy7W2EtVyoe1hzmJMkutbq3esUkcYVoYydT6Y12lhq1ppnVnShkbc0XzfKqolfCSg==
+  dependencies:
+    "@iconify/json-tools" "^1.0.10"
 
 vite-plugin-md@^0.4.2:
   version "0.4.2"
