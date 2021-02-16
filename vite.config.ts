@@ -14,7 +14,7 @@ export default defineConfig({
 	plugins: [
 		Components({
 			extensions,
-			customLoaderMatcher: id => id.endsWith('.md'),
+			customLoaderMatcher: (id) => id.endsWith('.md'),
 			customComponentResolvers: [
 				ViteIconsResolver({
 					componentPrefix: '',

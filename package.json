@@ -7,7 +7,9 @@
 		"build:typed": "vuedx-typecheck . && vite build",
 		"serve": "vite serve",
 		"vc:dev": "vc dev -d",
-		"prettier": "prettier --write \"src/**/*.{js,ts,css,vue}\""
+		"prettier": "prettier --write \"src/**/*.{js,ts,css,vue}\"",
+		"lint": "eslint --ext **/*.js,.ts,.vue --ignore-path .gitignore .",
+		"lint:fix": "eslint --ext **/*.js,.ts,.vue --fix --ignore-path .gitignore ."
 	},
 	"prettier": {
 		"arrowParens": "always",
@@ -20,6 +22,28 @@
 		"trailingComma": "all",
 		"useTabs": true
 	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"browser": true,
+			"node": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:prettier/recommended",
+			"plugin:tailwind/recommended",
+			"plugin:vue/essential"
+		],
+		"parserOptions": {
+			"parser": "@typescript-eslint/parser",
+			"sourceType": "module",
+			"ecmaVersion": 2018
+		},
+		"rules": {
+			"no-unused-vars": "off",
+			"@typescript-eslint/no-unused-vars": "off"
+		}
+	},
 	"dependencies": {
 		"ogl-typescript": "^0.1.20",
 		"vue": "^3.0.5",
@@ -30,11 +54,17 @@
 		"@splitbee/node": "^0.1.8",
 		"@types/node": "^14.14.28",
 		"@types/node-fetch": "^2.5.8",
+		"@typescript-eslint/parser": "^4.15.1",
 		"@vercel/node": "^1.8.5",
 		"@vitejs/plugin-vue": "^1.1.4",
 		"@vue/compiler-sfc": "^3.0.5",
 		"@vuedx/typecheck": "^0.6.3",
 		"@vuedx/typescript-plugin-vue": "^0.6.3",
+		"eslint": "^7.20.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-tailwind": "^0.2.0",
+		"eslint-plugin-vue": "^7.6.0",
 		"node-fetch": "^2.6.1",
 		"prettier": "^2.2.1",
 		"typescript": "^4.1.5",
